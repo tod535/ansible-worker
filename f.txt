@@ -1,0 +1,5 @@
+ansible-playbook playbooks/user.yml -i hosts.ini
+ansible-playbook playbooks/git.yml -i hosts.ini
+ansible-playbook playbooks/Clone.yml -i hosts.ini
+ansible-playbook playbooks/rep.yml -i hosts.ini
+ansible-playbook playbooks/nginx.yml -i hosts.ini

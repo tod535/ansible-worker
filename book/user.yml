@@ -1,7 +1,7 @@
 - hosts: ansible-worker
 
   tasks:
-     name: create ansible-worker user
+    - name: create ansible-worker user
       ansible.builtin.user:
         name: ansible-worker
         state: present
@@ -9,8 +9,8 @@
         groups: www-data
       become: yes
       tags: build_user
-
-     name: setting for ansible-worker
+    
+    - name: setting for ansible-worker
       ansible.builtin.file:
         path: /home/ansible-worker
         owner: www-data

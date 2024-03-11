@@ -1,8 +1,8 @@
-  hosts: ansible-worker
+- hosts: ansible-worker
   gather_facts: no
 
   tasks: 
-      name: cloning repository
+    - name: cloning repository
       ansible.builtin.git:
         repo: "https://github.com/iphilka/stud-template.git"
         dest: "/home/ansible-worker/www/stud-template"
